@@ -1,0 +1,26 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Dxlib</Name>
+    <Description>&lt;説明はありません。&gt;</Description>
+    <ProjectType>VC</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Dxlib</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="test.vcxproj" File="test.vcxproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.vcxproj.filters">test.vcxproj.filters</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="DrawPixel.cpp">DrawPixel.cpp</ProjectItem>
+		<ProjectItem>stdafx.cpp</ProjectItem>
+		<ProjectItem>stdafx.h</ProjectItem>
+		<ProjectItem>targetver.h</ProjectItem>
+		<ProjectItem>[プロジェクトテンプレート名].cpp</ProjectItem>
+	</Project>
+  </TemplateContent>
+</VSTemplate>
